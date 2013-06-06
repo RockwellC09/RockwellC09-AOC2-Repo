@@ -19,7 +19,7 @@
         [self setRibSizeStr:nil];
         [self setLbs:0];
         [self setNumberRibs:1];
-        [self setHoursPerLb:.60f];
+        [self setHoursPerLb:.6f];
         [self setRibStyle:@"Asian"];
     }
     return self;
