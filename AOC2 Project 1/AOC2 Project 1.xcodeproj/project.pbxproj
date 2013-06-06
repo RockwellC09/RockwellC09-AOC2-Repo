@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17230BF2176025C3004D5C91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17230BF1176025C3004D5C91 /* UIKit.framework */; };
+		17230BF4176025C3004D5C91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17230BF3176025C3004D5C91 /* Foundation.framework */; };
+		17230BF6176025C3004D5C91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17230BF5176025C3004D5C91 /* CoreGraphics.framework */; };
+		17230BFC176025C3004D5C91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17230BFA176025C3004D5C91 /* InfoPlist.strings */; };
+		17230BFE176025C3004D5C91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230BFD176025C3004D5C91 /* main.m */; };
+		17230C02176025C3004D5C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230C01176025C3004D5C91 /* AppDelegate.m */; };
+		17230C04176025C3004D5C91 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17230C03176025C3004D5C91 /* Default.png */; };
+		17230C06176025C3004D5C91 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17230C05176025C3004D5C91 /* Default@2x.png */; };
+		17230C08176025C3004D5C91 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17230C07176025C3004D5C91 /* Default-568h@2x.png */; };
+		17230C0B176025C3004D5C91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230C0A176025C3004D5C91 /* ViewController.m */; };
+		17230C0E176025C3004D5C91 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17230C0C176025C3004D5C91 /* ViewController_iPhone.xib */; };
+		17230C11176025C3004D5C91 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17230C0F176025C3004D5C91 /* ViewController_iPad.xib */; };
+		17230C1917602605004D5C91 /* ribCookingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230C1817602605004D5C91 /* ribCookingFactory.m */; };
+		17230C1F176026B6004D5C91 /* baseRibs.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230C1E176026B6004D5C91 /* baseRibs.m */; };
+		17230C22176026DC004D5C91 /* beefRibs.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230C21176026DC004D5C91 /* beefRibs.m */; };
+		17230C25176026EA004D5C91 /* porkRibs.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230C24176026EA004D5C91 /* porkRibs.m */; };
+		17230C28176026F8004D5C91 /* lambRibs.m in Sources */ = {isa = PBXBuildFile; fileRef = 17230C27176026F8004D5C91 /* lambRibs.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17230BEE176025C3004D5C91 /* AOC2 Project 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AOC2 Project 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17230BF1176025C3004D5C91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17230BF3176025C3004D5C91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17230BF5176025C3004D5C91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17230BF9176025C3004D5C91 /* AOC2 Project 1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2 Project 1-Info.plist"; sourceTree = "<group>"; };
+		17230BFB176025C3004D5C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17230BFD176025C3004D5C91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17230BFF176025C3004D5C91 /* AOC2 Project 1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2 Project 1-Prefix.pch"; sourceTree = "<group>"; };
+		17230C00176025C3004D5C91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17230C01176025C3004D5C91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17230C03176025C3004D5C91 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		17230C05176025C3004D5C91 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		17230C07176025C3004D5C91 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		17230C09176025C3004D5C91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17230C0A176025C3004D5C91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17230C0D176025C3004D5C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		17230C10176025C3004D5C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		17230C1717602605004D5C91 /* ribCookingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ribCookingFactory.h; sourceTree = "<group>"; };
+		17230C1817602605004D5C91 /* ribCookingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ribCookingFactory.m; sourceTree = "<group>"; };
+		17230C1D176026B6004D5C91 /* baseRibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseRibs.h; sourceTree = "<group>"; };
+		17230C1E176026B6004D5C91 /* baseRibs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseRibs.m; sourceTree = "<group>"; };
+		17230C20176026DC004D5C91 /* beefRibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = beefRibs.h; sourceTree = "<group>"; };
+		17230C21176026DC004D5C91 /* beefRibs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = beefRibs.m; sourceTree = "<group>"; };
+		17230C23176026EA004D5C91 /* porkRibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = porkRibs.h; sourceTree = "<group>"; };
+		17230C24176026EA004D5C91 /* porkRibs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = porkRibs.m; sourceTree = "<group>"; };
+		17230C26176026F8004D5C91 /* lambRibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lambRibs.h; path = ../lambRibs.h; sourceTree = "<group>"; };
+		17230C27176026F8004D5C91 /* lambRibs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lambRibs.m; path = ../lambRibs.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17230BEB176025C3004D5C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17230BF2176025C3004D5C91 /* UIKit.framework in Frameworks */,
+				17230BF4176025C3004D5C91 /* Foundation.framework in Frameworks */,
+				17230BF6176025C3004D5C91 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17230BE5176025C3004D5C91 = {
+			isa = PBXGroup;
+			children = (
+				17230BF7176025C3004D5C91 /* AOC2 Project 1 */,
+				17230BF0176025C3004D5C91 /* Frameworks */,
+				17230BEF176025C3004D5C91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17230BEF176025C3004D5C91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17230BEE176025C3004D5C91 /* AOC2 Project 1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17230BF0176025C3004D5C91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17230BF1176025C3004D5C91 /* UIKit.framework */,
+				17230BF3176025C3004D5C91 /* Foundation.framework */,
+				17230BF5176025C3004D5C91 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17230BF7176025C3004D5C91 /* AOC2 Project 1 */ = {
+			isa = PBXGroup;
+			children = (
+				17230C00176025C3004D5C91 /* AppDelegate.h */,
+				17230C01176025C3004D5C91 /* AppDelegate.m */,
+				17230C09176025C3004D5C91 /* ViewController.h */,
+				17230C0A176025C3004D5C91 /* ViewController.m */,
+				17230C0C176025C3004D5C91 /* ViewController_iPhone.xib */,
+				17230C0F176025C3004D5C91 /* ViewController_iPad.xib */,
+				17230BF8176025C3004D5C91 /* Supporting Files */,
+				17230C1717602605004D5C91 /* ribCookingFactory.h */,
+				17230C1817602605004D5C91 /* ribCookingFactory.m */,
+				17230C1D176026B6004D5C91 /* baseRibs.h */,
+				17230C1E176026B6004D5C91 /* baseRibs.m */,
+				17230C20176026DC004D5C91 /* beefRibs.h */,
+				17230C21176026DC004D5C91 /* beefRibs.m */,
+				17230C23176026EA004D5C91 /* porkRibs.h */,
+				17230C24176026EA004D5C91 /* porkRibs.m */,
+				17230C26176026F8004D5C91 /* lambRibs.h */,
+				17230C27176026F8004D5C91 /* lambRibs.m */,
+			);
+			path = "AOC2 Project 1";
+			sourceTree = "<group>";
+		};
+		17230BF8176025C3004D5C91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17230BF9176025C3004D5C91 /* AOC2 Project 1-Info.plist */,
+				17230BFA176025C3004D5C91 /* InfoPlist.strings */,
+				17230BFD176025C3004D5C91 /* main.m */,
+				17230BFF176025C3004D5C91 /* AOC2 Project 1-Prefix.pch */,
+				17230C03176025C3004D5C91 /* Default.png */,
+				17230C05176025C3004D5C91 /* Default@2x.png */,
+				17230C07176025C3004D5C91 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17230BED176025C3004D5C91 /* AOC2 Project 1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17230C14176025C3004D5C91 /* Build configuration list for PBXNativeTarget "AOC2 Project 1" */;
+			buildPhases = (
+				17230BEA176025C3004D5C91 /* Sources */,
+				17230BEB176025C3004D5C91 /* Frameworks */,
+				17230BEC176025C3004D5C91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AOC2 Project 1";
+			productName = "AOC2 Project 1";
+			productReference = 17230BEE176025C3004D5C91 /* AOC2 Project 1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17230BE6176025C3004D5C91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Christopher Rockwell";
+			};
+			buildConfigurationList = 17230BE9176025C3004D5C91 /* Build configuration list for PBXProject "AOC2 Project 1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17230BE5176025C3004D5C91;
+			productRefGroup = 17230BEF176025C3004D5C91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17230BED176025C3004D5C91 /* AOC2 Project 1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17230BEC176025C3004D5C91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17230BFC176025C3004D5C91 /* InfoPlist.strings in Resources */,
+				17230C04176025C3004D5C91 /* Default.png in Resources */,
+				17230C06176025C3004D5C91 /* Default@2x.png in Resources */,
+				17230C08176025C3004D5C91 /* Default-568h@2x.png in Resources */,
+				17230C0E176025C3004D5C91 /* ViewController_iPhone.xib in Resources */,
+				17230C11176025C3004D5C91 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17230BEA176025C3004D5C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17230BFE176025C3004D5C91 /* main.m in Sources */,
+				17230C02176025C3004D5C91 /* AppDelegate.m in Sources */,
+				17230C0B176025C3004D5C91 /* ViewController.m in Sources */,
+				17230C1917602605004D5C91 /* ribCookingFactory.m in Sources */,
+				17230C1F176026B6004D5C91 /* baseRibs.m in Sources */,
+				17230C22176026DC004D5C91 /* beefRibs.m in Sources */,
+				17230C25176026EA004D5C91 /* porkRibs.m in Sources */,
+				17230C28176026F8004D5C91 /* lambRibs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17230BFA176025C3004D5C91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17230BFB176025C3004D5C91 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17230C0C176025C3004D5C91 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17230C0D176025C3004D5C91 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		17230C0F176025C3004D5C91 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17230C10176025C3004D5C91 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17230C12176025C3004D5C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17230C13176025C3004D5C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17230C15176025C3004D5C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOC2 Project 1/AOC2 Project 1-Prefix.pch";
+				INFOPLIST_FILE = "AOC2 Project 1/AOC2 Project 1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17230C16176025C3004D5C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOC2 Project 1/AOC2 Project 1-Prefix.pch";
+				INFOPLIST_FILE = "AOC2 Project 1/AOC2 Project 1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17230BE9176025C3004D5C91 /* Build configuration list for PBXProject "AOC2 Project 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17230C12176025C3004D5C91 /* Debug */,
+				17230C13176025C3004D5C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17230C14176025C3004D5C91 /* Build configuration list for PBXNativeTarget "AOC2 Project 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17230C15176025C3004D5C91 /* Debug */,
+				17230C16176025C3004D5C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17230BE6176025C3004D5C91 /* Project object */;
+}
