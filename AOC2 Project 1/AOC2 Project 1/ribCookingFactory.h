@@ -14,6 +14,7 @@
 
 @interface ribCookingFactory : NSObject
 
+//cook the ribs based on the type
 +(baseRibs *)cookRibs: (int)ribType;
 
 @end

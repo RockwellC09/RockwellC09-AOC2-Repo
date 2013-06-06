@@ -10,6 +10,7 @@
 
 @implementation ribCookingFactory
 
+//allocate only with the specific type of rib is called
 +(baseRibs *)cookRibs: (int)ribType {
     if(ribType == BEEF) {
         return [[beefRibs alloc] init];
