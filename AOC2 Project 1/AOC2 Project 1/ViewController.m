@@ -24,7 +24,7 @@
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:titleLabel];
     
-    //set the lbs for my beef ribs and send it through my cooking factory
+    //set the lbs for my beef ribs and send it through my rib cooking factory
     beefRibs * cookBeefRibs = (beefRibs*)[ribCookingFactory cookRibs:BEEF];
     [cookBeefRibs setLbs:10];
     
@@ -55,7 +55,7 @@
     beefLabel2.numberOfLines = 2;
     [self.view addSubview:beefLabel2];
     
-    //set the lbs for my pork ribs and send it through my cooking factory
+    //set the lbs for my pork ribs and send it through my rib cooking factory
     porkRibs * cookPorkRibs = (porkRibs*)[ribCookingFactory cookRibs:PORK];
     [cookPorkRibs setLbs:9];
     
@@ -94,7 +94,7 @@
     lambTitleLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:lambTitleLabel];
     
-    //set the lbs for my lamb ribs and send it through my cooking factory
+    //set the lbs for my lamb ribs and send it through my rib cooking factory
         lambRibs * cookLambRibs = (lambRibs*)[ribCookingFactory cookRibs:LAMB];
     [cookLambRibs setLbs:7];
     
