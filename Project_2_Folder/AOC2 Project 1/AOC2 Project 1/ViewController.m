@@ -50,27 +50,29 @@
     poundsLabel.text = [NSString stringWithFormat:@"%i", stepVal2];
     
     //check to see which button is disable to update the quantity of ribs when the stepper is clicked
-    if (beefButton.enabled == false) {
+    if (beefButton.enabled == false && button.tag != 5) {
         beefRibs * cookBeefRibs = (beefRibs*)[ribCookingFactory cookRibs:BEEF];
         [cookBeefRibs setNumberRibs:stepVal];
         cookText.text = [cookBeefRibs styleRib];
-    } else if (porkButton.enabled == false) {
+    } else if (porkButton.enabled == false && button.tag != 5) {
         porkRibs * cookPorkRibs = (porkRibs*)[ribCookingFactory cookRibs:PORK];
         [cookPorkRibs setNumberRibs:stepVal];
         cookText.text = [cookPorkRibs styleRib];
-    } else if (lambButton.enabled == false) {
+    } else if (lambButton.enabled == false && button.tag != 5) {
         lambRibs * cookLambRibs = (lambRibs*)[ribCookingFactory cookRibs:LAMB];
         [cookLambRibs setNumberRibs:stepVal];
         cookText.text = [cookLambRibs styleRib];
-    } else if (button.tag == 5) {
+    } else {
+        //do nothing
+    }
+    
+    if (button.tag == 5) {
         //checking for the info button click to open the second view
         AboutMeViewController *secondView = [[AboutMeViewController alloc]
                                              initWithNibName:@"AboutMeView" bundle:nil];
         if (secondView != nil) {
             [self presentViewController:secondView animated:true completion:nil];
         }
-    } else {
-        //do nothing
     }
     
     //check for the button tag to determine which button was pressed
