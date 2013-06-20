@@ -34,7 +34,9 @@
         [dateFormatter setDateFormat:@"MMM d, yyyy h:mm:ss a"];
         NSString *date = [dateFormatter stringFromDate:datePicker.date];
         
-        [self dismissViewControllerAnimated:true completion:nil]; 
+        // dismiss add event view
+        [self dismissViewControllerAnimated:true completion:nil];
+        // sent proper information to my custom delegate
         [delegate Save:textField.text :date];
     }
     
