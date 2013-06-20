@@ -18,6 +18,8 @@
 		17487AF717734FD000B4E9B8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17487AF617734FD000B4E9B8 /* Default-568h@2x.png */; };
 		17487AFA17734FD000B4E9B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17487AF917734FD000B4E9B8 /* ViewController.m */; };
 		17487AFD17734FD000B4E9B8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17487AFB17734FD000B4E9B8 /* ViewController.xib */; };
+		17487B0B1773540800B4E9B8 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17487B091773540800B4E9B8 /* AddEventViewController.m */; };
+		17487B0C1773540800B4E9B8 /* AddEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17487B0A1773540800B4E9B8 /* AddEvent.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		17487AF817734FD000B4E9B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		17487AF917734FD000B4E9B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		17487AFC17734FD000B4E9B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		17487B081773540800B4E9B8 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
+		17487B091773540800B4E9B8 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
+		17487B0A1773540800B4E9B8 /* AddEvent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEvent.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				17487AF917734FD000B4E9B8 /* ViewController.m */,
 				17487AFB17734FD000B4E9B8 /* ViewController.xib */,
 				17487AE717734FD000B4E9B8 /* Supporting Files */,
+				17487B081773540800B4E9B8 /* AddEventViewController.h */,
+				17487B091773540800B4E9B8 /* AddEventViewController.m */,
+				17487B0A1773540800B4E9B8 /* AddEvent.xib */,
 			);
 			path = "AOC2 Project 3";
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				17487AF517734FD000B4E9B8 /* Default@2x.png in Resources */,
 				17487AF717734FD000B4E9B8 /* Default-568h@2x.png in Resources */,
 				17487AFD17734FD000B4E9B8 /* ViewController.xib in Resources */,
+				17487B0C1773540800B4E9B8 /* AddEvent.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				17487AED17734FD000B4E9B8 /* main.m in Sources */,
 				17487AF117734FD000B4E9B8 /* AppDelegate.m in Sources */,
 				17487AFA17734FD000B4E9B8 /* ViewController.m in Sources */,
+				17487B0B1773540800B4E9B8 /* AddEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
