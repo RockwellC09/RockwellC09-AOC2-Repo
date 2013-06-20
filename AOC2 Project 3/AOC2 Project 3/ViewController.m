@@ -35,9 +35,15 @@
     }
 }
 
+int count = 0;
 -(void)Save:(NSString*)text :(NSString*)date {
-    NSString *output = [NSString stringWithFormat:@"New Event: %@ \n%@", text, date];
-    textView.text = output;
+    //clear out textview default text
+    if (count == 0) {
+        textView.text = @"";
+    }
+    //NSString *output = [[NSString alloc] init];
+    textView.text = [textView.text stringByAppendingFormat:@"New Event: %@ \n%@ \n \n", text, date];
+    count++;
 }
 
 - (void)didReceiveMemoryWarning
