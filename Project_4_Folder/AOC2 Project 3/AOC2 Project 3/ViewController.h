@@ -10,7 +10,7 @@
 #import "AddEventViewController.h"
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate>
 {
     IBOutlet UITextView *textView;
     IBOutlet UILabel *swipeLabel;

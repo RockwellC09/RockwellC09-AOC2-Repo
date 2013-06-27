@@ -67,13 +67,38 @@
 -(IBAction)onClick:(id)sender {
     UIButton *button = (UIButton*)sender;
     if (button != nil) {
-        // set up defualts
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSString *eventsText = textView.text;
-        [defaults setObject:eventsText forKey:@"events"];
-        
-        // save the default data
+        if (button.tag == 1) {
+            // set up defualts
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            NSString *eventsText = textView.text;
+            [defaults setObject:eventsText forKey:@"events"];
+            
+            // save the default data
+            [defaults synchronize];
+            
+            // let the user know their data was saved
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data Saved!" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [alert show];
+        } else if (button.tag == 2) {
+            UIAlertView *deleteAlert = [[UIAlertView alloc] initWithTitle:@"Are you sure?" message:@"This will delete all your data." delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+            [deleteAlert show];
+        }
+    }
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        //delete user defaults
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        NSDictionary * dict = [defaults dictionaryRepresentation];
+        for (id key in dict) {
+            [defaults removeObjectForKey:key];
+        }
         [defaults synchronize];
+
+        textView.text = @"All the events go here";
+    } else {
+        //do nothing
     }
 }
 
