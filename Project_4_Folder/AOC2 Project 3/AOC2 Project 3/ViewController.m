@@ -55,10 +55,13 @@
 
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer {
     
-    //check to see if the add event lable was swiped to the right and open the second view
+    // check to see if the add event lable was swiped to the right and open the second view
     AddEventViewController *secondView = [[AddEventViewController alloc] initWithNibName:@"AddEvent" bundle:nil];
     if (secondView != nil) {
+        // add a page transition to the views
+        secondView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         
+        // show add events view
         [self presentViewController:secondView animated:true completion:nil];
     }
 
