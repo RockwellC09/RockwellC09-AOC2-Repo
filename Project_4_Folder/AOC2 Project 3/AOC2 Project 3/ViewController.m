@@ -80,8 +80,16 @@
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data Saved!" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [alert show];
         } else if (button.tag == 2) {
-            UIAlertView *deleteAlert = [[UIAlertView alloc] initWithTitle:@"Are you sure?" message:@"This will delete all your data." delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
-            [deleteAlert show];
+            // check to see if the dummy text is present and tell the user there's no data to delete
+            NSString *dummyText = @"All the events go here";
+            if ([textView.text isEqualToString:dummyText]) {
+                UIAlertView *noDataAlert = [[UIAlertView alloc] initWithTitle:@"No Data" message:@"There's no data to delete" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                [noDataAlert show];
+            } else {
+                // if the dummy text is not present, show the delete alert to confirm data deletion
+                UIAlertView *deleteAlert = [[UIAlertView alloc] initWithTitle:@"Are you sure?" message:@"This will delete all your data." delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+                [deleteAlert show];
+            }
         }
     }
 }
@@ -94,6 +102,7 @@
         for (id key in dict) {
             [defaults removeObjectForKey:key];
         }
+        // erase the default data
         [defaults synchronize];
 
         textView.text = @"All the events go here";
