@@ -38,8 +38,8 @@ static EventSingleton *_instance = nil;
     return self;
 }
 
--(NSString*)getText:(NSString*)text {
-    NSString *eventText = [NSString stringWithFormat:@"%@ \n %@ \n \n", eventString, dateString];
+-(NSString*)getText {
+    NSString *eventText = [NSString stringWithFormat:@"New Event: %@ \n%@ \n \n", eventString, dateString];
     return eventText;
 }
 @end

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AddEventViewController.h"
+#import "EventSingleton.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 
 - (void)viewDidLoad
 {
+    
     //check for user defaults and load them if they exist
     if (![[NSUserDefaults standardUserDefaults] valueForKey:@"events"]) {
         // do nothing if default doesn't exist
@@ -35,6 +37,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+-(void)viewWillAppear:(BOOL)animated {
+    if([[EventSingleton GetInstance] isAddingEvent] == true) {
+        // check to see if the example text is in the text field and clear it out if it is
+        NSString *dummyText = @"All the events go here";
+        if ([textView.text isEqualToString:dummyText]) {
+            textView.text = @"";
+        }
+        // create a mutable string to append the event text to the text view
+        NSMutableString *eventText = [[NSMutableString alloc] initWithString:textView.text];
+        [eventText appendString:[[EventSingleton GetInstance] getText]];
+        textView.text = eventText;
+        [[EventSingleton GetInstance]setIsAddingEvent:FALSE];
+    }
+}
+
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer {
     
     //check to see if the add event lable was swiped to the right and open the second view

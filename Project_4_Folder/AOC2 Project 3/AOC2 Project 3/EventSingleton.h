@@ -16,5 +16,5 @@
 @property (nonatomic, strong)NSString *eventString;
 @property BOOL isAddingEvent;
 
--(NSString*)getText:(NSString*)text;
+-(NSString*)getText;
 @end

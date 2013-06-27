@@ -36,15 +36,24 @@
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer{
     // dismiss add event view
     
-    //format date
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MMM d, yyyy h:mm:ss a"];
-    NSString *date = [dateFormatter stringFromDate:datePicker.date];
-    
-    [[EventSingleton GetInstance] setDateString:date];
-    [[EventSingleton GetInstance] setEventString:textField.text];
-    
-    [self dismissViewControllerAnimated:true completion:nil];
+    //check to see if the event name was entered
+    if(textField.text.length > 0) {
+        //format date
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"MMM d, yyyy h:mm:ss a"];
+        NSString *date = [dateFormatter stringFromDate:datePicker.date];
+        
+        // set the date and event in the singleton
+        [[EventSingleton GetInstance] setDateString:date];
+        [[EventSingleton GetInstance] setEventString:textField.text];
+        
+        [[EventSingleton GetInstance] setIsAddingEvent:true];
+        
+        [self dismissViewControllerAnimated:true completion:nil];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Event Name" message:@"Please enter an event name" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 }
 
 - (void)viewDidLoad
