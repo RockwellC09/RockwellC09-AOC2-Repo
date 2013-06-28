@@ -71,22 +71,29 @@
     UIButton *button = (UIButton*)sender;
     if (button != nil) {
         if (button.tag == 1) {
-            // set up defualts
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            NSString *eventsText = textView.text;
-            [defaults setObject:eventsText forKey:@"events"];
+            //check to see if there's data to be saved
+            NSString *dummyText = @"All the events go here";
+            if ([textView.text isEqualToString:dummyText]) {
+                UIAlertView *noSaveDataAlert = [[UIAlertView alloc] initWithTitle:@"No Data" message:@"There's no data to saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                [noSaveDataAlert show];
+            } else {
+                // set up defualts
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                NSString *eventsText = textView.text;
+                [defaults setObject:eventsText forKey:@"events"];
+                
+                // save the default data
+                [defaults synchronize];
             
-            // save the default data
-            [defaults synchronize];
-            
-            // let the user know their data was saved
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data Saved!" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [alert show];
+                // let the user know their data was saved
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data Saved!" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                [alert show];
+            }
         } else if (button.tag == 2) {
             // check to see if the dummy text is present and tell the user there's no data to delete
             NSString *dummyText = @"All the events go here";
             if ([textView.text isEqualToString:dummyText]) {
-                UIAlertView *noDataAlert = [[UIAlertView alloc] initWithTitle:@"No Data" message:@"There's no data to delete" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                UIAlertView *noDataAlert = [[UIAlertView alloc] initWithTitle:@"No Data" message:@"There's no data to deleted" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                 [noDataAlert show];
             } else {
                 // if the dummy text is not present, show the delete alert to confirm data deletion
